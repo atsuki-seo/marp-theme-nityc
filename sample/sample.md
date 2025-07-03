@@ -29,7 +29,22 @@ code
 ```
 text
 
-日本語のテキスト
+---
+
+# This is Good Slide
+
+
+<div class="summary-positive">
+✓ Good Point
+</div>
+
+---
+
+# This is Bad Slide
+
+<div class="summary-negative">
+✓ Bad Point
+</div>
 
 ---
 
