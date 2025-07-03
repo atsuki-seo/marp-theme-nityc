@@ -1,0 +1,95 @@
+/* @theme yuge */
+ 
+@import 'default';
+
+section {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+
+.summary-negative {
+    background-color: #fff0f0;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.summary-positive {
+    background-color: #f0fff0;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+blockquote {
+    font-size: 14px;
+    color: #666;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header::before {
+    content: '';
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-image: url('https://www.yuge.ac.jp/wp-content/themes/yugekousen/data/download/kousho.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+section.title {
+    position: relative;
+}
+
+section.title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+section.end {
+    position: relative;
+}
+
+section.end::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+}
+
+section.end h1 {
+    text-align: center;
+    font-size: 64px;
+}
