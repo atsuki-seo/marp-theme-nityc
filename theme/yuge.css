@@ -64,7 +64,7 @@ section.title::before {
     right: 0;
     width: 50%;
     height: 100%;
-    background-image: url('');
+    background-image: url('https://raw.githubusercontent.com/atsuki-seo/marp-theme-nityc/refs/heads/main/img/start.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -82,7 +82,7 @@ section.end::before {
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url('');
+    background-image: url('https://raw.githubusercontent.com/atsuki-seo/marp-theme-nityc/refs/heads/main/img/end.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
