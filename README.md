@@ -23,8 +23,7 @@
 1. VSCodeで設定を開く (`Ctrl + ,`)
 2. 「Marp: Themes」または「markdown.marp.themes」を検索
 3. CSSファイルへのローカルパスまたはリモートパスを追加
-  - `https://raw.githubusercontent.com/atsuki-seo/marp-theme-nityc/refs/heads/main/theme/yuge.css`
-  - ※ 上記のリンクでも問題ないが、リポジトリをフォークしてGitHub Pagesなどでホストして利用することを推奨します
+    - `https://raw.githubusercontent.com/atsuki-seo/marp-theme-nityc/refs/heads/main/theme/yuge.css`
 4. Markdownファイルの先頭でテーマを有効する：
 
 ```yaml
@@ -39,10 +38,9 @@ footer: 'フッターテキスト'
 
 5. すぐに反映されない場合は、VSCodeを再起動してください
 
-追加設定（`size`や`paginate`など）については、[公式ドキュメント](https://github.com/marp-team/marp/blob/main/website/docs/guide/directives.md)を参照してください。
+> 追加設定（`size`や`paginate`など）については、[公式ドキュメント](https://github.com/marp-team/marp/blob/main/website/docs/guide/directives.md)を参照してください。
 
-
-### 3. 特別なクラスの使用
+### 特別なクラスの使用
 
 #### タイトルスライド
 ```markdown
