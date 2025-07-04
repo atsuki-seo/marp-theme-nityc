@@ -2,64 +2,63 @@
 marp: true
 theme: yuge
 paginate: true
-header: '弓削商船高等専門学校'
-footer: '情報工学科'
+header: 'ヘッダー'
+footer: 'フッター'
 math: mathjax
 ---
 
 <!--
 class: title
 -->
-# 新システム開発提案
-## 学生管理システムの刷新について
+# Marp Theme Yugeサンプル
+## レイアウトテンプレート集
 
 ---
 
 <!--
 class: slide
 -->
-# 現行システムの課題
+# 基本的なスライドレイアウト（class: slide）
 
-## 主な問題点
-### 技術的課題
-- 古いシステム基盤（10年前の技術）
-- 保守性の低下
+## 見出し構造のテスト
+### 小見出しの表示
+- 箇条書きリスト項目
+- 重要なポイント
 
-> 現行システムは2014年に構築されており、技術的負債が蓄積しています
+> 引用文のスタイル確認用テキストです
 
-```sql
--- 例：古いデータベース構造
-SELECT * FROM student_info 
-WHERE status = 'active';
+```javascript
+// コードブロックの表示確認
+function sampleCode() {
+    console.log("Hello, World!");
+}
 ```
 
-これらの課題を解決するため、新システムへの移行が必要です。
+通常のテキストの表示確認用サンプル文章です。
 
 ---
 
-# 新システムの優位性
+# 良い点の強調（summary-positive）
 
 <div class="summary-positive">
 
-## ✅ 導入メリット
-- 最新技術による高いパフォーマンス
-- 直感的なユーザーインターフェース
-- 将来性のある拡張可能なアーキテクチャ
-- 運用コストの大幅削減
+## ✅ ポジティブスタイル
+- 成功事例の表示
+- 良い点の強調
+- 肯定的なメッセージ
 
 </div>
 
 ---
 
-# 移行時の懸念事項
+# 注意点の表示（summary-negative）
 
 <div class="summary-negative">
 
-## ❌ 検討課題
-- 初期導入コスト（約500万円）
-- 移行期間中の業務への影響
-- 教職員の新システム習得時間
-- 既存データの移行リスク
+## ❌ ネガティブスタイル
+- 課題や問題点の表示
+- 注意すべき点
+- 改善が必要な項目
 
 </div>
 
@@ -69,34 +68,34 @@ WHERE status = 'active';
 class: flex-layout
 -->
 
-# プロジェクト進捗状況
+# 基本2カラムレイアウト（class: flex-layout）
 
 <div class="columns">
 <div class="summary-positive">
 
-## ✅ 完了済み
-- 要件定義
-- 基本設計
-- UI設計
-- 開発環境構築
-- 認証機能実装
+## 左カラム
+- 短いコンテンツ
+- 項目1
+- 項目2
+- 項目3
 
 </div>
 <div class="summary-negative">
 
-## ❌ 未完了
-- 詳細設計
-- 実装
-- テスト
-- デプロイ準備
-- ユーザー認証機能の実装
-- プロフィール管理画面の作成
-- 投稿機能（テキスト・画像対応）
-- コメント・いいね機能
-- リアルタイム通知システム
-- 全文検索機能
-- 管理者ダッシュボード
-- 分析レポート機能
+## 右カラム（長いコンテンツ）
+- 長いリストのテスト
+- 項目A
+- 項目B
+- 項目C
+- 項目D
+- 項目E
+- 項目F
+- 項目G
+- 項目H
+- 項目I
+- 項目J
+- 項目K
+- 項目L
 
 </div>
 </div>
@@ -107,41 +106,38 @@ class: flex-layout
 class: flex-layout natural-height
 -->
 
-# システム機能一覧
+# Natural-Height レイアウト（class: natural-height）
 
 <div class="columns">
 <div>
 
-## 📋 実装予定機能
-- 学生情報管理
-- 成績管理システム
-- 出席管理機能
-- 課題提出システム
-- 掲示板機能
-- 時間割管理
-- 教員専用ダッシュボード
-- 保護者向けポータル
-- 成績分析レポート
-- データバックアップ機能
-- セキュリティ監査機能
-- 多言語対応（日本語・英語）
-- モバイル対応
+## 📋 左カラム（非常に長いリスト）
+- リスト項目の表示確認1
+- リスト項目の表示確認2
+- リスト項目の表示確認3
+- リスト項目の表示確認4
+- リスト項目の表示確認5
+- リスト項目の表示確認6
+- リスト項目の表示確認7
+- リスト項目の表示確認8
+- リスト項目の表示確認9
+- リスト項目の表示確認10
+- リスト項目の表示確認11
+- リスト項目の表示確認12
+- リスト項目の表示確認13
+- リスト項目の表示確認14
+- リスト項目の表示確認15
 
 </div>
 <div class="summary-positive">
 
-## 🎯 重要機能
-**フェーズ1**
-- 学生情報管理
-- 成績管理
+## 🎯 右カラム（短いコンテンツ）
+**特徴**
+- 左側が長くても位置安定
+- 各カラムが自然な高さを保持
 
-**フェーズ2**
-- 出席管理
-- 課題提出
-
-**フェーズ3**
-- 分析機能
-- 外部連携
+**overflow: visible で**
+**コンテンツが切れない**
 
 </div>
 </div>
@@ -152,36 +148,123 @@ class: flex-layout natural-height
 class: flex-layout equal-height
 -->
 
-# 導入効果の比較
+# Equal-Height レイアウト（class: equal-height）
 
 <div class="columns">
 <div class="summary-positive">
 
-## 現行システム
-**メリット**
-- 安定稼働
-- 慣れた操作
-- 既存データ蓄積
-
-**デメリット**
-- 古い技術
-- 保守コスト高
-- 拡張性低
+## 左カラム（短いコンテンツ）
+- 短いテキスト
+- 項目1
+- 項目2
 
 </div>
 <div class="summary-negative">
 
-## 新システム
-**メリット**
-- 最新技術採用
-- 高い拡張性
-- 使いやすいUI
-- 低ランニングコスト
+## 右カラム（長いコンテンツ）
+- 長いテキストの表示確認
+- 項目A
+- 項目B
+- 項目C
+- 項目D
+- 項目E
+- 項目F
+- 項目G
 
-**デメリット**
-- 初期投資必要
-- 移行期間必要
-- 操作習得時間
+**両カラムの高さが揃います**
+
+</div>
+</div>
+
+---
+
+<!--
+class: flex-layout
+-->
+
+# 画像レイアウトテスト（基本）
+
+<div class="columns">
+<div>
+
+## 左カラム画像
+![サンプル画像1](../img/end.jpg)
+![サンプル画像2](../img/start.jpg)
+
+</div>
+<div>
+
+## 右カラム画像
+![サンプル画像3](../img/end.jpg)
+![サンプル画像4](../img/start.jpg)
+
+</div>
+</div>
+
+---
+
+<!--
+class: flex-layout natural-height
+-->
+
+# 画像レイアウトテスト（Natural-Height）
+
+<div class="columns">
+<div>
+
+## 📸 画像ギャラリー
+![画像1](../img/end.jpg)
+![画像2](../img/start.jpg)
+![画像3](../img/end.jpg)
+![画像4](../img/start.jpg)
+![画像5](../img/end.jpg)
+![画像6](../img/start.jpg)
+![画像7](../img/end.jpg)
+![画像8](../img/start.jpg)
+
+</div>
+<div class="summary-positive">
+
+## 💡 レイアウト特徴
+**Natural-Height**
+- 左側に多数の画像
+- 右側は短い説明文
+- 位置が上部に固定
+
+**画像が多くても**
+**説明文の位置は安定**
+
+</div>
+</div>
+
+---
+
+<!--
+class: flex-layout equal-height
+-->
+
+# 画像レイアウトテスト（Equal-Height）
+
+<div class="columns">
+<div class="summary-positive">
+
+## 🎯 Before画像
+![Before](../img/end.jpg)
+
+**特徴**
+- 高さが統一
+- 背景色も揃う
+
+</div>
+<div class="summary-negative">
+
+## 🚀 After画像
+![After](../img/end.jpg)
+
+**特徴**
+- 左右の高さが揃う
+- 見た目が整然
+- 比較表示に最適
 
 </div>
 </div>
@@ -192,4 +275,4 @@ class: flex-layout equal-height
 class: end
 -->
 
-# ご清聴ありがとうございました
+# Thank you for watching
